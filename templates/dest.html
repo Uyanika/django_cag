@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Search</title>
+</head>
+<body>
+    <form action="/search/" method="get">
+        Seyahat etmek istediğiniz yer:  <input type="text" name="q">
+        <input type="submit" value="ara">
+    </form>
+</body>
+
+<body>
+<table>
+<tr><th>CityName</th><th>Airport</th><th>Country</th></tr>
+{% for destination in destinations %}
+    <tr><td align="center">{{ destination.cityname }}</td><td>{{ destination.airport }}</td><td>{{ destination.country }}</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>
