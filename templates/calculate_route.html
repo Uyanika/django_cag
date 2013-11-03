@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Find a route using Geolocation and Google Maps API</title>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      function calculateRoute(from, to) {
+        var myOptions = {
+          zoom: 8,
+          center: new google.maps.LatLng(39.9, 32.85),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        // Draw the map
+        var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
+        var flightPlanCoordinates = [from,to];
+        var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        flightPath.setMap(mapObject);
+
+      }
+
+      $(document).ready(function() {
+        // If the browser supports the Geolocation API
+        if (typeof navigator.geolocation == "undefined") {
+          $("#error").text("Your browser doesn't support the Geolocation API");
+          return;
+        }
+
+        $("#from-link, #to-link").click(function(event) {
+          event.preventDefault();
+          var addressId = this.id.substring(0, this.id.indexOf("-"));
+
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({
+              "location": new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+            },
+            function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK)
+                $("#" + addressId).val(results[0].formatted_address);
+              else
+                $("#error").append("Adresinize ulasamadım<br />");
+            });
+          },
+          function(positionError){
+            $("#error").append("Error: " + positionError.message + "<br />");
+          },
+          {
+            enableHighAccuracy: true,
+            timeout: 10 * 1000 // 10 seconds
+          });
+        });
+
+          {% if nereden %}
+
+            calculateRoute(new google.maps.LatLng({{ nereden.0 }},{{ nereden.1 }}),new google.maps.LatLng( {{ nereye.0 }},{{ nereye.1 }}));
+
+          {% endif %}
+      });
+    </script>
+    <style type="text/css">
+      #map {
+        width: 500px;
+        height: 400px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <form id="calculate-route" name="calculate-route"  method="get">
+      <label for="from">Nereden:</label>
+      <input type="text" id="from" name="nereden" required="required" placeholder="bir adres girin" size="30" />
+      <a id="from-link" href="#">Bulundugum yer</a>
+      <br />
+
+      <label for="to">Nereye:</label>
+      <input type="text" id="to" name="nereye" required="required" placeholder="bir adres girin" size="30" />
+      <a id="to-link" href="#"></a>
+      <br />
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <div id="map"></div>
+    <p id="error"></p>
+  </body>
+</html>
