@@ -12,7 +12,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/django_cag$geocode_hesap.coverage" NAME="geocode_hesap Coverage Results" MODIFIED="1383514652953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/geocode" />
+    <SUITE FILE_PATH="coverage/django_cag$geocode_hesap_turkce.coverage" NAME="geocode+hesap+turkce Coverage Results" MODIFIED="1383828149378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/geocode" />
+    <SUITE FILE_PATH="coverage/django_cag$geocode_hesap.coverage" NAME="geocode_hesap Coverage Results" MODIFIED="1383554735262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/geocode" />
+    <SUITE FILE_PATH="coverage/django_cag$views.coverage" NAME="views Coverage Results" MODIFIED="1383556154832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/geocode" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -26,19 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_cag/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="61" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2754">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_cag/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="1" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="32" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -47,18 +40,65 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geocode/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="544">
+            <state line="37" column="0" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autocomplete_api.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geocode/autocomplete_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="4" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3213">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geocode/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="47" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding>
-                <element signature="e#26#46#0" expanded="true" />
+                <element signature="e#28#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dest.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/dest.html">
+      <file leaf-file-name="calculate_route.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/calculate_route.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.48022598" vertical-offset="0" max-vertical-offset="442">
+            <state line="24" column="0" selection-start="927" selection-end="927" vertical-scroll-proportion="28.0" vertical-offset="1136" max-vertical-offset="2210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autocomplete_light_registry.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/geocode/autocomplete_light_registry.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.23748545" vertical-offset="0" max-vertical-offset="859">
+              <folding>
+                <element signature="e#20#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autocomplete.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/autocomplete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculate_directions.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/calculate_directions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="12" selection-start="635" selection-end="643" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2006">
               <folding />
             </state>
           </provider>
@@ -67,43 +107,18 @@
       <file leaf-file-name="geocode_hesap.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geocode/geocode_hesap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="45" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="2261">
+            <state line="46" column="50" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2329">
               <folding>
-                <element signature="e#66#89#0" expanded="true" />
-                <element signature="e#303#369#0" expanded="false" />
-                <marker date="1383515783518" expanded="true" signature="2790:2852" placeholder="SELECT Lat, ..destinations..." />
+                <marker date="1383895397867" expanded="true" signature="2691:2753" placeholder="SELECT Lat, ..destinations..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_cag/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="214" selection-end="214" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-              <folding>
-                <marker date="1383426369930" expanded="true" signature="5:213" placeholder="..." />
-                <marker date="1383426369930" expanded="true" signature="12:46" placeholder="..." />
-                <marker date="1383426369930" expanded="true" signature="53:205" placeholder="..." />
-                <marker date="1383426369930" expanded="true" signature="93:197" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geocode/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geocode/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="33" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="374">
+            <state line="128" column="0" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="2176" max-vertical-offset="2771">
               <folding />
             </state>
           </provider>
@@ -119,26 +134,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/merhaba.html" />
-        <option value="$PROJECT_DIR$/templates/search_form.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/dest.html" />
-        <option value="$PROJECT_DIR$/geocode/models.py" />
-        <option value="$PROJECT_DIR$/django_cag/settings.py" />
         <option value="$PROJECT_DIR$/templates/search.html" />
-        <option value="$PROJECT_DIR$/django_cag/urls.py" />
-        <option value="$PROJECT_DIR$/geocode/views.py" />
-        <option value="$PROJECT_DIR$/geocode/geocode_hesap.py" />
+        <option value="$PROJECT_DIR$/templates/merhaba.html" />
         <option value="$PROJECT_DIR$/templates/calculate_route_directions.html" />
+        <option value="$PROJECT_DIR$/templates/calculate_directions.html" />
+        <option value="$PROJECT_DIR$/geocode/geocode+hesap+turkce.py" />
+        <option value="$PROJECT_DIR$/django_cag/settings.py" />
+        <option value="$PROJECT_DIR$/geocode/widget.py" />
+        <option value="$PROJECT_DIR$/geocode/geocode_hesap.py" />
+        <option value="$PROJECT_DIR$/django_cag/urls.py" />
         <option value="$PROJECT_DIR$/templates/calculate_route.html" />
+        <option value="$PROJECT_DIR$/geocode/auto_complete_registry.py" />
+        <option value="$PROJECT_DIR$/templates/autocomplete.html" />
+        <option value="$PROJECT_DIR$/geocode/views.py" />
+        <option value="$PROJECT_DIR$/geocode/autocomplete_api.py" />
+        <option value="$PROJECT_DIR$/geocode/models.py" />
+        <option value="$PROJECT_DIR$/geocode/autocomplete_light_registry.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1" />
+    <option name="width" value="1678" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -248,19 +266,20 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects" />
+    <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.geocode_hesap">
+  <component name="RunManager" selected="Python.geocode+hesap+turkce">
     <configuration default="false" name="geocode_hesap" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,6 +294,44 @@
       <module name="django_cag" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/geocode/geocode_hesap.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/geocode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_cag" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/geocode/views.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="geocode+hesap+turkce" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/geocode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_cag" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/geocode/geocode+hesap+turkce.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -364,27 +421,7 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="django_cag" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -410,7 +447,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_cag" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -479,13 +536,17 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Django server.django_cag" />
       <item index="1" class="java.lang.String" itemvalue="Python.geocode_hesap" />
+      <item index="2" class="java.lang.String" itemvalue="Python.views" />
+      <item index="3" class="java.lang.String" itemvalue="Python.geocode+hesap+turkce" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.geocode_hesap" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.geocode+hesap+turkce" />
+        <item index="1" class="java.lang.String" itemvalue="Python.views" />
+        <item index="2" class="java.lang.String" itemvalue="Python.geocode_hesap" />
       </list>
     </recent_temporary>
   </component>
@@ -516,19 +577,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="0" width="1678" height="1040" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6633987" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20517449" sideWeight="0.664859" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33660132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.335141" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,130 +609,114 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/geocode/geocode+hesap+turkce.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
-          <folding>
-            <marker date="1383426369930" expanded="true" signature="5:213" placeholder="..." />
-            <marker date="1383426369930" expanded="true" signature="12:46" placeholder="..." />
-            <marker date="1383426369930" expanded="true" signature="53:205" placeholder="..." />
-            <marker date="1383426369930" expanded="true" signature="93:197" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geocode/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geocode/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="33" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="206" selection-end="206" vertical-scroll-proportion="0.4735376" vertical-offset="0" max-vertical-offset="359" />
+        <state line="100" column="0" selection-start="3738" selection-end="3738" vertical-scroll-proportion="0.74041814" vertical-offset="1275" max-vertical-offset="2125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/merhaba.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="85" selection-end="85" vertical-scroll-proportion="0.37883008" vertical-offset="0" max-vertical-offset="359" />
+        <state line="15" column="7" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calculate_route_directions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="2125" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/1119001944/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="605" column="0" selection-start="20382" selection-end="20382" vertical-scroll-proportion="1.1484375" vertical-offset="9256" max-vertical-offset="86190" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/ArcGIS10.1/Lib/site-packages/django/forms/widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="46" selection-start="6660" selection-end="6660" vertical-scroll-proportion="2.2734375" vertical-offset="1074" max-vertical-offset="15589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_cag/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="61" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="818" selection-end="818" vertical-scroll-proportion="-9.692307" vertical-offset="224" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_cag/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geocode/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="544">
-          <folding>
-            <element signature="e#26#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="214" selection-end="214" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-          <folding>
-            <marker date="1383426369930" expanded="true" signature="5:213" placeholder="..." />
-            <marker date="1383426369930" expanded="true" signature="12:46" placeholder="..." />
-            <marker date="1383426369930" expanded="true" signature="53:205" placeholder="..." />
-            <marker date="1383426369930" expanded="true" signature="93:197" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geocode/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="33" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geocode/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+        <state line="128" column="0" selection-start="4550" selection-end="4550" vertical-scroll-proportion="0.0" vertical-offset="1402" max-vertical-offset="2771">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/geocode/geocode_hesap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="45" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="2261">
+        <state line="46" column="50" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2176">
           <folding>
-            <element signature="e#66#89#0" expanded="true" />
-            <element signature="e#303#369#0" expanded="false" />
-            <marker date="1383515783518" expanded="true" signature="2790:2852" placeholder="SELECT Lat, ..destinations..." />
+            <marker date="1383895397867" expanded="true" signature="2691:2753" placeholder="SELECT Lat, ..destinations..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calculate_route_directions.html">
+    <entry file="file://$PROJECT_DIR$/django_cag/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="629">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="896" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_cag/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calculate_directions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="635" selection-end="643" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/autocomplete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/calculate_route.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="750" selection-end="750" vertical-scroll-proportion="0.914557" vertical-offset="0" max-vertical-offset="1700">
+        <state line="24" column="0" selection-start="927" selection-end="927" vertical-scroll-proportion="28.0" vertical-offset="1136" max-vertical-offset="2210">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dest.html">
+    <entry file="file://$PROJECT_DIR$/geocode/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.48022598" vertical-offset="0" max-vertical-offset="442">
+        <state line="20" column="47" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding>
+            <element signature="e#28#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geocode/autocomplete_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3213">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geocode/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geocode/autocomplete_light_registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.23748545" vertical-offset="0" max-vertical-offset="859">
+          <folding>
+            <element signature="e#20#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

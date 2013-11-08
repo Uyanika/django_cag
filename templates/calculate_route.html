@@ -1,17 +1,19 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Find a route using Geolocation and Google Maps API</title>
+    <title></title>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    {% include 'autocomplete_light/static.html' %}
     <script>
       function calculateRoute(from, to) {
         var myOptions = {
-          zoom: 8,
+          zoom: 7,
           center: new google.maps.LatLng(39.9, 32.85),
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        // Draw the map
+
         var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
         var flightPlanCoordinates = [from,to];
         var flightPath = new google.maps.Polyline({
@@ -20,14 +22,37 @@
             strokeColor: '#FF0000',
             strokeOpacity: 1.0,
             strokeWeight: 2
+
         });
 
         flightPath.setMap(mapObject);
 
       }
 
+
       $(document).ready(function() {
-        // If the browser supports the Geolocation API
+
+        $("#from").autocomplete({
+          source: function( request, response ) {
+            $.ajax({
+              url: "calculate_route.html",
+              dataType: "json",
+              data: {
+                nereden: request.term
+              },
+              success: function( data ) {
+                response( $.map( data.cities, function( item ) {
+                  return {
+                    label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+                    value: item.name
+                  }
+                }));
+              }
+            });
+          },
+          minLength: 2
+        });
+
         if (typeof navigator.geolocation == "undefined") {
           $("#error").text("Your browser doesn't support the Geolocation API");
           return;
@@ -44,7 +69,7 @@
             },
             function(results, status) {
               if (status == google.maps.GeocoderStatus.OK)
-                $("#" + addressId).val(results[0].formatted_address);
+                $("#" + addressId).val(results[3].formatted_address);
               else
                 $("#error").append("Adresinize ulasamadım<br />");
             });
@@ -63,12 +88,17 @@
             calculateRoute(new google.maps.LatLng({{ nereden.0 }},{{ nereden.1 }}),new google.maps.LatLng( {{ nereye.0 }},{{ nereye.1 }}));
 
           {% endif %}
+
+          {% if nereye %}
+            calculateRoute(new google.maps.LatLng({{ nereden.0 }},{{ nereden.1 }}),new google.maps.LatLng( {{ nereye.0 }},{{ nereye.1 }}));
+          {% endif %}
+
       });
     </script>
     <style type="text/css">
       #map {
-        width: 500px;
-        height: 400px;
+        width: 900px;
+        height: 600px;
         margin-top: 10px;
       }
     </style>

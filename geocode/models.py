@@ -13,3 +13,9 @@ class Destinations(models.Model):
     country = models.TextField(db_column='Country', blank=True) # Field name made lowercase. This field type is a guess.
     class Meta:
         db_table = 'destinations'
+
+
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)

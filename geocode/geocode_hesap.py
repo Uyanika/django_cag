@@ -31,7 +31,7 @@ def distance(origin, destination):
 
     return round(d)
 def geocode_hesap(adres):
-    call = lite.connect("D:\Projects\django_cag\destinations.sqlite")
+    call = lite.connect("C:\Projects\django_cag\destinations.sqlite")
 
     with call:
         cityName = adres
@@ -40,7 +40,7 @@ def geocode_hesap(adres):
         rows = curs.fetchall()
         coor = None
         if (len(rows) > 0):
-            print u"Aradığınız isme en uygun havaalanları:"
+            print #u"Aradığınız isme en uygun havaalanları:"
             i = 0
             for row in rows:
                 i = i + 1
@@ -51,7 +51,7 @@ def geocode_hesap(adres):
         js_response = json.load(response)
         #print len(js_response['results'])
         if (len(js_response['results']) > 1):
-            print u"Adres tayini yapmaya çalışıyorum, birden fazla olasılık buldum:"
+            #print u"Adres tayini yapmaya çalışıyorum, birden fazla olasılık buldum:"
             i = 0
             coords = []
             for address in js_response['results']:
@@ -59,9 +59,9 @@ def geocode_hesap(adres):
                 coords.append(coor)
                 i = i + 1
                 print str(i) + ' : ' + address['formatted_address']
-            secilen_adres = raw_input(u'Listeden bir adres seçin :')
+            secilen_adres = raw_input(u'Listeden  :')
             while (int(secilen_adres) > len(js_response['results']) or int(secilen_adres) < 0):
-                secilen_adres = raw_input(u'Listeden bir adres seçin :')
+                secilen_adres = raw_input(u'Listeden  :')
             coor = coords[int(secilen_adres) - 1]
         else:
             coor = js_response['results'][0]['geometry']['location']
@@ -73,7 +73,7 @@ def geocode_hesap(adres):
             target = Point(x, y)
             target1 = lat, lon
             #print target1
-            print  u"Size gitmek istediğiniz adrese en yakın havaalanı önerilerim;"
+            
             curs.execute("SELECT  Lat, Lon, CityName, Airport, Country FROM destinations")
             rows = list(curs.fetchall())
             i = 0
